@@ -1,0 +1,28 @@
+.App {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: 5fr 1.5fr;
+  grid-template-columns: repeat(8, minmax(200px, 1fr));
+  background-color: #000;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
