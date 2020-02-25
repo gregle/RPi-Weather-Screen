@@ -4,12 +4,19 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1em;
   display: grid;
-  grid-gap: 1em;
-  grid-template-rows: 5fr 1.5fr;
-  grid-template-columns: repeat(8, minmax(200px, 1fr));
-  background-color: #000;
+  grid-template-rows: 7fr 1.5fr;
+  grid-template-columns: repeat(8, minmax(100px, 1fr));
+  overflow: hidden;
+  .Weather-map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

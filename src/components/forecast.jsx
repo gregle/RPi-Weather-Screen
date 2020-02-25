@@ -12902,7 +12902,7 @@ const Forecast = (props) => {
   let forecast = [];
   
 	if (!sampleD/*!props.forecast*/) {
-    for (var i = 0; i < 7; i++) {
+    for (var i = 0; i < 8; i++) {
       forecast.push(<ForecastCard key={i}/>);
     }
 	} else {
