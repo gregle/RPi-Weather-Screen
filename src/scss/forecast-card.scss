@@ -1,41 +1,41 @@
-.Card-Wrapper {
+.Card {
   grid-row-start: 2;
   grid-row-end: 2;
-  background: rgba(1,1,1,0.75);
+  padding: 1.25em 1rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
+  flex-direction: column;
+  background: rgba(1,1,1,0.75);
+  align-items: flex-start;
   z-index: 1;
-  .Card {
-    display: grid;
-    grid-template-rows: 50%;
-    grid-template-columns: 50%;
-    padding: 0.1em;
+  color: white;
+  text-shadow: 1px 1px 0 #000;
+  align-items: center;
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .slug {
+    display: inline-block;
+    text-align: right;
+  }
+  .forecast-icon {
+    display: inline-block;
     color: white;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 1px 1px 0 #000;
-    .forecast-icon {
-      display: inline-block;
-      color: white;
-      font-size: 3em;
-      text-align: right;
-      align-self: bottom;
-    }
-    .temp {
-      font-size: 2em;
-    }
-    .slash {
-      padding: 0 0.25em;
-      vertical-align: super;
-    }
-    .summary {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      font-size: 0.85em;
-      align-self: baseline;
-      padding-top: .25em;
-    }
+    font-size: 3rem;
+    padding-top: 0.8rem;
+  }
+  .temp {
+    font-size: 2em;
+  }
+  .slash {
+    padding: 0 0.25em;
+    vertical-align: super;
+  }
+  .summary {
+    display: block;
+    font-size: 0.85em;
+    padding-top: 0.25rem;
+    text-align: center;
   }
 }
