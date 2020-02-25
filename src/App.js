@@ -57,7 +57,7 @@ class App extends React.Component {
   createForecast() {
     let forecast = [];
     if (this.state.forecast.daily) {
-      for (let i = 0; i < this.state.forecast.daily.data.length-1; i++) {
+      for (let i = 1; i < this.state.forecast.daily.data.length; i++) {
         forecast.push(<ForecastCard dailyForecast={this.state.forecast.daily.data[i]} key={i}/>);
       }
     }

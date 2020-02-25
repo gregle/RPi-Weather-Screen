@@ -14,8 +14,8 @@ const ForecastCard = (props) => {
       <div className="top-row">
         <i className={"forecast-icon wi wi-forecast-io-" + props.dailyForecast.icon}></i>
         <div className={"slug"}>
-          <span>{props.dailyForecast.dayNice}</span><br/>
-          <span className={"temp"}>{Math.round(props.dailyForecast.temperatureHigh)}</span><span className={"slash"}>/</span><span className={"temp"}>{Math.round(props.dailyForecast.temperatureLow)}</span>
+          <span className={"day-nice"}>{props.dailyForecast.dayNice}</span>
+          <span className={"temp"}>{Math.round(props.dailyForecast.temperatureHigh)}&#176;</span><span className={"slash"}>/</span><span className={"temp"}>{Math.round(props.dailyForecast.temperatureLow)}&#176;</span>
         </div>
       </div><span className={"summary"}>{props.dailyForecast.summary}</span>
     </div>

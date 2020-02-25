@@ -4,24 +4,33 @@
   padding: 1.25em 1rem;
   display: flex;
   flex-direction: column;
-  background: rgba(1,1,1,0.75);
+  background: rgba(255, 255, 255, 0.85);
   align-items: flex-start;
   z-index: 1;
-  color: white;
-  text-shadow: 1px 1px 0 #000;
+  color: rgb(68, 68, 68);;
+  text-shadow: 1px 1px 0 #fff;
   align-items: center;
   .top-row {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
+  .day-nice {
+    font-weight: bold;
+    font-size: 2rem;
+    display: block;
+  }
   .slug {
     display: inline-block;
     text-align: right;
+    span {
+      line-height: 1em;
+    }
   }
   .forecast-icon {
     display: inline-block;
-    color: white;
+    color: rgb(68, 68, 68);
+    text-shadow: 1px 1px 0 #fff;
     font-size: 3rem;
     padding-top: 0.8rem;
   }
@@ -34,7 +43,6 @@
   }
   .summary {
     display: block;
-    font-size: 0.85em;
     padding-top: 0.25rem;
     text-align: center;
   }
